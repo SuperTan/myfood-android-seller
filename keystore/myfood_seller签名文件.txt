@@ -1,0 +1,10 @@
+key store password:myfoodseller299
+key password:yisjt299myfoodseller
+Alias:seller
+
+keytool  -list -v -keystore E:\android_studio_code\MyFood\myfood-android-seller\keystore\myfood_seller.jks
+
+cd C:\Program Files\Java\jdk1.8.0_20\bin
+
+
+keytool  -list -v -keystore C:\Users\Administrator\.android\debug.keystore

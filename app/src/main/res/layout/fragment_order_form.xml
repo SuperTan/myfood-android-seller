@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f1"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/nav_bg"
+        android:gravity="center"
+        android:text="@string/order_from"
+        android:textColor="@color/color_ffffff"
+        android:textSize="17sp" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tl_order_form"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:background="@color/color_ffffff"
+        app:tabIndicatorColor="@color/color_19dd9f"
+        app:tabSelectedTextColor="@color/color_19dd9f"
+        app:tabTextAppearance="@style/TabLayoutTextSize" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_order_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

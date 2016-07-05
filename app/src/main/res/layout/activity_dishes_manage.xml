@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f1"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_first_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_dishes_kind"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="2dp"
+            android:gravity="center"
+            android:text="菜品系"
+            android:textColor="@color/color_686C6B"
+            android:textSize="16sp" />
+
+
+        <CheckBox
+            android:id="@+id/cb_dishes_kind_first"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/selecter_dishes_edit"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/sichuan_cuisine"
+            android:textColor="@color/color_686C6B"
+            android:textSize="11sp" />
+
+        <CheckBox
+            android:id="@+id/cb_dishes_kind_second"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/selecter_dishes_edit"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/northeastern_chinese_cuisine"
+            android:textColor="@color/color_686C6B"
+            android:textSize="11sp" />
+
+        <CheckBox
+            android:id="@+id/cb_dishes_kind_thirdly"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/selecter_dishes_edit"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/hunan_cuisine"
+            android:textColor="@color/color_686C6B"
+            android:textSize="11sp" />
+
+        <CheckBox
+            android:id="@+id/cb_dishes_kind_other"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/selecter_dishes_edit"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/other_cuisine"
+            android:textColor="@color/color_686C6B"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/dashed" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/dishes_name"
+            android:textColor="@color/color_686C6B" />
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center"
+            android:background="@drawable/white_bg"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_dishes_name"
+                android:layout_width="0dp"
+                android:layout_height="26dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/no_more_than_eight"
+                android:maxLength="8"
+                android:paddingLeft="6dp"
+                android:paddingRight="10dp"
+                android:textColorHint="@color/color_BDBDBD"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/iv_delete_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:src="@drawable/delete" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/dashed" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="2dp"
+            android:gravity="center"
+            android:text="@string/dishes_price"
+            android:textColor="@color/color_686C6B" />
+
+        <EditText
+            android:id="@+id/et_dishes_price"
+            android:layout_width="140dp"
+            android:layout_height="26dp"
+            android:background="@drawable/white_bg"
+            android:hint="@string/reasonable_pricing"
+            android:inputType="numberDecimal"
+            android:paddingLeft="6dp"
+            android:textColorHint="@color/color_BDBDBD"
+            android:textSize="13sp" />
+
+        <ImageView
+
+            android:id="@+id/iv_delete_price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/delete" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/dashed" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_dishes_image"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="2dp"
+            android:gravity="center"
+            android:text="@string/dishes_image"
+            android:textColor="@color/color_686C6B" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rlv_dishes_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/dashed" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_dishes_explain_first"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="2dp"
+            android:gravity="center"
+            android:text="@string/dishes_explain"
+            android:textColor="@color/color_686C6B" />
+
+        <TextView
+            android:id="@+id/tv_dishes_explain_second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/disher_introduction"
+            android:singleLine="true"
+            android:textColorHint="@color/color_BDBDBD"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/dashed" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_eat_way"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="2dp"
+            android:gravity="center"
+            android:text="@string/eat_way"
+            android:textColor="@color/color_686C6B" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cb_eat_home"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/selecter_dishes_edit"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/eat_home"
+                    android:textColor="@color/color_686C6B"
+                    android:textSize="11sp" />
+
+                <CheckBox
+                    android:id="@+id/cb_eat_here"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/selecter_dishes_edit"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/eat_here"
+                    android:textColor="@color/color_686C6B"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cb_eat_go"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/selecter_dishes_edit"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/eat_go"
+                    android:textColor="@color/color_686C6B"
+                    android:textSize="11sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="配送费由《我的菜》平台统一定价为5元。"
+                    android:textColor="@color/color_686C6B"
+                    android:textSize="11sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/dashed" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="2dp"
+            android:gravity="center"
+            android:text="菜品状态"
+            android:textColor="@color/color_686C6B" />
+
+        <RadioGroup
+            android:id="@+id/tg_up_or_down"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/tv_dishes_up"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/selecter_dishes_edit"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/dishes_up"
+                android:textColor="@color/color_686C6B"
+                android:textSize="11sp" />
+
+            <RadioButton
+                android:id="@+id/tv_dishes_down"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/selecter_dishes_edit"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/dishes_down"
+                android:textColor="@color/color_686C6B"
+                android:textSize="11sp" />
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selecter_input_phone"
+        android:text="@string/confirm_the_editor" />
+
+
+</LinearLayout>

@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f1"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/nav_bg"
+        android:gravity="center"
+        android:text="@string/setting"
+        android:textColor="@color/color_ffffff"
+        android:textSize="17sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/color_ffffff">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/setting_logo_bg" />
+
+        <TextView
+            android:id="@+id/tv_version_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/imageView"
+            android:layout_alignRight="@+id/imageView"
+            android:layout_below="@+id/imageView"
+            android:gravity="center"
+            android:text="cai299.com V1.0.0" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_go_service"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selecter_setting_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="联系客服" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/arrow"
+            android:gravity="center_vertical"
+            android:paddingRight="20dp"
+            android:text="@string/customer_service_telephone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_go_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/selecter_setting_bg"
+        android:drawableRight="@drawable/arrow"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="意见及反馈" />
+
+    <TextView
+        android:id="@+id/tv_go_cust"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/selecter_setting_bg"
+        android:drawableRight="@drawable/arrow"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="《我的菜》用户端" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/selecter_input_phone"
+            android:text="退出登录"
+            android:textColor="@color/color_ffffff"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+</LinearLayout>
